@@ -347,6 +347,10 @@ function CFrameSplineMetatable:SolveRotCFrame(alpha: number)
 	return CFrame.lookAt(position, position + tangent, quaternionToCFrame.UpVector)
 end
 
+function TupleSplineMetatable:SolvePosition(alpha: number)
+
+end
+
 ---- Chain
 function CatmullRomSpline.Chain.new(points: {Knot}, tau: number?)
 	assert(#points >= 2, "At least 2 points are needed for a spline chain.")
